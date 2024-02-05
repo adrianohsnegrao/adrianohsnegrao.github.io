@@ -291,3 +291,10 @@
   inset-inline-start: -3.125rem;
   transform: rotate(90deg);
 }
+.zoom-image {
+  transition: transform 0.3s ease; /* Suaviza a transição do efeito de zoom */
+}
+
+.zoom-image:hover {
+  transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse está sobre ela */
+}
