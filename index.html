@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adriano Negrão — Backend Developer / Software Engineer</title>
+  <meta name="description" content="Adriano Henrique de Souza Negrão — Backend Developer & Software Engineer com 13+ anos em APIs, microsserviços, arquitetura backend, AWS, soluções de IA e modernização de sistemas." />
+  <meta name="author" content="Adriano Henrique de Souza Negrão" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Adriano Negrão — Backend Developer / Software Engineer" />
+  <meta property="og:description" content="13+ anos construindo APIs, microsserviços e arquitetura backend escalável — com IA aplicada à engenharia de software." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/adriano.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='monospace' font-weight='bold' fill='%2364ffda'>A</text></svg>" />
+</head>
+<body>
+  <!-- Animated background -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">
+      <span class="nav__bracket">&lt;</span>adriano<span class="nav__bracket">/&gt;</span>
+    </a>
+    <nav class="nav__links" id="nav-links">
+      <a href="#about">Sobre</a>
+      <a href="#stack">Stack</a>
+      <a href="#experience">Trajetória</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact" class="nav__cta">Contato</a>
+    </nav>
+    <button class="nav__burger" id="nav-burger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__grid">
+        <div class="hero__intro">
+          <p class="hero__eyebrow"><span class="dot"></span> Disponível para projetos · Remote</p>
+          <h1 class="hero__name">Adriano Negrão</h1>
+          <h2 class="hero__role">
+            <span class="grad">Backend Developer</span> &amp; Software Engineer
+          </h2>
+          <p class="hero__tagline">
+            13+ anos transformando requisitos complexos em
+            <strong>APIs, microsserviços e arquitetura backend</strong> que escalam.
+            Hoje aplicando <strong>IA</strong> para automatizar engenharia de software —
+            da modernização de legados a soluções cloud-native.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">Ver projetos →</a>
+            <a href="#contact" class="btn btn--ghost">Fale comigo</a>
+          </div>
+
+          <div class="hero__socials">
+            <a href="https://github.com/adrianohsnegrao" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/adrianohenriquesouzanegrao/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <span>·</span>
+            <a href="mailto:adrianohsn2022@gmail.com" aria-label="Email">Email</a>
+            <span>·</span>
+            <span class="hero__loc">📍 Manaus/AM, Brasil</span>
+          </div>
+        </div>
+
+        <!-- Terminal + photo -->
+        <div class="hero__visual">
+          <div class="photo-wrap">
+            <img src="assets/adriano.jpeg" alt="Adriano Negrão" class="photo" loading="eager" />
+            <div class="photo-ring"></div>
+          </div>
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal__bar">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+              <span class="terminal__title">adriano@engineer: ~</span>
+            </div>
+            <div class="terminal__body">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-out" id="type-line"></p>
+              <p><span class="t-prompt">$</span> cat skills.json</p>
+              <pre class="t-json">{
+  <span class="t-key">"foco"</span>: <span class="t-val">"Backend · Arquitetura · IA"</span>,
+  <span class="t-key">"langs"</span>: [<span class="t-val">"Go"</span>, <span class="t-val">"PHP"</span>, <span class="t-val">"TS"</span>, <span class="t-val">"Java"</span>],
+  <span class="t-key">"cloud"</span>: <span class="t-val">"AWS · Docker · CI/CD"</span>,
+  <span class="t-key">"ai"</span>: <span class="t-val">"LLMs · automação · agents"</span>,
+  <span class="t-key">"anos"</span>: <span class="t-num">13</span>
+}<span class="t-cursor">▋</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats" id="stats">
+        <div class="stat"><span class="stat__num" data-target="13" data-suffix="+">0</span><span class="stat__label">Anos de experiência</span></div>
+        <div class="stat"><span class="stat__num" data-target="15" data-suffix="+">0</span><span class="stat__label">Empresas &amp; clientes</span></div>
+        <div class="stat"><span class="stat__num" data-target="20" data-suffix="+">0</span><span class="stat__label">APIs &amp; integrações</span></div>
+        <div class="stat"><span class="stat__num" data-target="3" data-suffix=" 🌎">0</span><span class="stat__label">Países atendidos</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <h2 class="section__title">Sobre mim</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            Sou <strong>Backend Developer / Software Engineer</strong> com mais de
+            <strong>13 anos</strong> dedicados a desenvolvimento e modernização de
+            sistemas backend, APIs RESTful e integrações corporativas.
+          </p>
+          <p>
+            Atuo em projetos nacionais e internacionais com equipes distribuídas e
+            ambientes ágeis, sempre focado em <strong>escalabilidade, performance e
+            automação de processos</strong>. Trago para o time práticas sólidas de
+            engenharia — SOLID, Clean Code e Design Patterns — e visão arquitetural
+            de microsserviços e soluções cloud-native.
+          </p>
+          <p>
+            Meu foco atual é <strong>Inteligência Artificial aplicada à engenharia de
+            software</strong>: uso LLMs, agentes e automação para acelerar o ciclo de
+            desenvolvimento. Mantenho uma <strong>AI Software Factory</strong> própria —
+            uma fábrica de software que combina padrões, playbooks e geração assistida
+            por IA para criar e evoluir projetos com consistência.
+          </p>
+        </div>
+        <ul class="about__highlights">
+          <li><span>🤖</span> IA aplicada à engenharia: LLMs, agentes &amp; automação</li>
+          <li><span>⚙️</span> Arquitetura de microsserviços &amp; modernização de legados</li>
+          <li><span>🔌</span> APIs RESTful e integrações financeiras/corporativas</li>
+          <li><span>☁️</span> AWS, Docker e pipelines CI/CD</li>
+          <li><span>🌐</span> Equipes distribuídas (Brasil, Espanha, projetos globais)</li>
+          <li><span>🎓</span> Tecnólogo em ADS — conclusão 2026</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Stack &amp; ferramentas</h2>
+      </div>
+      <div class="stack__grid">
+        <div class="stack__card stack__card--ai reveal">
+          <h3>🤖 IA &amp; Automação</h3>
+          <div class="chips">
+            <span class="chip">LLMs</span><span class="chip">Agentes / Agents</span>
+            <span class="chip">Geração assistida por IA</span><span class="chip">OpenAI API</span>
+            <span class="chip">Automação de engenharia</span>
+          </div>
+        </div>
+        <div class="stack__card reveal">
+          <h3>Linguagens</h3>
+          <div class="chips">
+            <span class="chip">Go</span><span class="chip">PHP</span>
+            <span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+            <span class="chip">Java</span><span class="chip">SQL</span>
+          </div>
+        </div>
+        <div class="stack__card reveal">
+          <h3>Backend</h3>
+          <div class="chips">
+            <span class="chip">Laravel</span><span class="chip">Node.js</span>
+            <span class="chip">APIs RESTful</span><span class="chip">Microsserviços</span>
+            <span class="chip">Arquitetura Backend</span>
+          </div>
+        </div>
+        <div class="stack__card reveal">
+          <h3>Dados</h3>
+          <div class="chips">
+            <span class="chip">MySQL</span><span class="chip">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="stack__card reveal">
+          <h3>Cloud &amp; DevOps</h3>
+          <div class="chips">
+            <span class="chip">AWS</span><span class="chip">Docker</span>
+            <span class="chip">CI/CD</span><span class="chip">GitHub Actions</span>
+            <span class="chip">GitLab CI</span>
+          </div>
+        </div>
+        <div class="stack__card reveal">
+          <h3>Práticas</h3>
+          <div class="chips">
+            <span class="chip">SOLID</span><span class="chip">Clean Code</span>
+            <span class="chip">Design Patterns</span><span class="chip">Cloud-Native</span>
+          </div>
+        </div>
+        <div class="stack__card reveal">
+          <h3>Metodologias</h3>
+          <div class="chips">
+            <span class="chip">Scrum</span><span class="chip">Kanban</span>
+            <span class="chip">Git / GitHub / GitLab</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Trajetória profissional</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <span class="tl-period">Jan/2026 — Atual</span>
+            <h3>Backend Consultant <span class="tl-company">· SPHERIA Global Ventures</span></h3>
+            <span class="tl-place">Espanha · Remoto</span>
+            <ul>
+              <li>Consultoria internacional em desenvolvimento backend e integrações corporativas.</li>
+              <li>APIs RESTful e soluções orientadas a escalabilidade.</li>
+              <li>Colaboração com equipes distribuídas e suporte à modernização de sistemas.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <span class="tl-period">Ago/2023 — Out/2025</span>
+            <h3>Backend Developer / Software Engineer <span class="tl-company">· RentCars Ltda</span></h3>
+            <ul>
+              <li>Desenvolvimento e modernização de sistemas backend e APIs RESTful.</li>
+              <li>Integrações financeiras e comunicação entre serviços.</li>
+              <li>Docker, AWS, Git e pipelines CI/CD; decisões arquiteturais de escalabilidade e performance.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <span class="tl-period">Jan/2025 — Out/2025</span>
+            <h3>Consultoria Full Stack <span class="tl-company">· The Chaincademy</span></h3>
+            <span class="tl-place">Consultoria internacional · Remoto</span>
+            <ul>
+              <li>Módulos backend e integrações para plataforma internacional.</li>
+              <li>APIs RESTful e melhorias de performance.</li>
+              <li>Suporte à evolução arquitetural com equipes globais.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <span class="tl-period">Mai/2023 — Jul/2024</span>
+            <h3>Desenvolvedor Backend <span class="tl-company">· MoveEdu Inovação e Educação</span></h3>
+            <ul>
+              <li>Microsserviços e APIs RESTful.</li>
+              <li>Modernização de legados e otimização de performance.</li>
+              <li>Integração entre serviços e automação de processos cloud.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <span class="tl-period">2024 — 2025</span>
+            <h3>Projetos Freelancer <span class="tl-company">· TWT Soft, Bluware, Excellent, IVY Group</span></h3>
+            <ul>
+              <li>APIs RESTful e integrações complexas.</li>
+              <li>Ambientes backend com Docker e AWS; pipelines CI/CD.</li>
+              <li>Modernização de sistemas legados.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Projetos em destaque</h2>
+      </div>
+
+      <article class="project project--featured reveal">
+        <div class="project__tag">🤖 IA · Destaque</div>
+        <h3>AI Software Factory</h3>
+        <p class="project__desc">
+          Minha fábrica de software movida a <strong>IA</strong>: repositório de
+          conhecimento técnico, padrões de engenharia, playbooks, templates executáveis,
+          scorecards de decisão e scripts de automação para iniciar e manter projetos com
+          consistência. Inclui bootstrap de projetos e <strong>geração de blueprints e
+          scaffolding de domínio assistidos por LLM</strong> — provando, na prática, como
+          uso IA para acelerar o ciclo de engenharia de ponta a ponta.
+        </p>
+        <div class="chips">
+          <span class="chip">IA / LLM</span><span class="chip">Bash</span><span class="chip">Node.js</span>
+          <span class="chip">Templates</span><span class="chip">CI/CD</span>
+          <span class="chip">Automação</span><span class="chip">Laravel · Vue · Go · Nest · Next</span>
+        </div>
+        <div class="project__links">
+          <a href="https://github.com/adrianohsnegrao/ai-software-factory" target="_blank" rel="noopener" class="btn btn--small">Ver no GitHub →</a>
+        </div>
+      </article>
+
+      <div class="project__row">
+        <article class="project reveal">
+          <h3>Integrações &amp; APIs Corporativas</h3>
+          <p class="project__desc">
+            Desenvolvimento de APIs RESTful e integrações financeiras de alta
+            disponibilidade, com foco em escalabilidade e comunicação entre serviços.
+          </p>
+          <div class="chips">
+            <span class="chip">PHP/Laravel</span><span class="chip">AWS</span><span class="chip">Docker</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <h3>Modernização de Legados</h3>
+          <p class="project__desc">
+            Migração e refatoração de sistemas legados para arquiteturas de
+            microsserviços, com otimização de performance e automação de processos.
+          </p>
+          <div class="chips">
+            <span class="chip">Microsserviços</span><span class="chip">CI/CD</span><span class="chip">Go</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="projects__note">
+        Mais projetos e contribuições no meu
+        <a href="https://github.com/adrianohsnegrao" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="contact__card reveal">
+        <span class="section__index">05</span>
+        <h2 class="contact__title">Vamos construir algo juntos?</h2>
+        <p class="contact__text">
+          Estou aberto a projetos de consultoria backend, arquitetura e modernização
+          de sistemas — remoto, nacional ou internacional.
+        </p>
+        <a href="mailto:adrianohsn2022@gmail.com" class="btn btn--primary btn--big">adrianohsn2022@gmail.com</a>
+        <div class="contact__socials">
+          <a href="https://github.com/adrianohsnegrao" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/adrianohenriquesouzanegrao/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="tel:+5592984898923">(92) 98489-8923</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Adriano Henrique de Souza Negrão — construído com HTML, CSS &amp; JS puro.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
