@@ -34,6 +34,7 @@
       <a href="#stack">Stack</a>
       <a href="#experience">Trajetória</a>
       <a href="#projects">Projetos</a>
+      <a href="#work">Entregas</a>
       <a href="#contact" class="nav__cta">Contato</a>
     </nav>
     <button class="nav__burger" id="nav-burger" aria-label="Abrir menu">
@@ -347,10 +348,64 @@
       </p>
     </section>
 
+    <!-- WORK / PROJETOS FINALIZADOS -->
+    <section class="section" id="work">
+      <div class="section__head">
+        <span class="section__index">05</span>
+        <h2 class="section__title">Projetos finalizados</h2>
+      </div>
+      <p class="work__intro">
+        Trabalhos entregues e no ar — clientes reais, em produção.
+      </p>
+
+      <div class="work__grid">
+        <!--
+          TEMPLATE DE PROJETO FINALIZADO
+          Para adicionar um novo projeto, copie o <article> abaixo e ajuste:
+          - o link (href) do card e do botão
+          - a imagem (src) → assets/projects/<slug-do-projeto>/cover.png
+          - título, ano, descrição e as <span class="chip"> de tecnologias
+        -->
+        <article class="work-card reveal">
+          <a class="work-card__media"
+             href="https://site-paroquia-santo-afonso.vercel.app/"
+             target="_blank" rel="noopener"
+             aria-label="Abrir o site da Paróquia Santo Afonso">
+            <img src="assets/projects/paroquia-santo-afonso/cover.png"
+                 alt="Site institucional da Paróquia Santo Afonso"
+                 loading="lazy"
+                 onerror="this.style.display='none'" />
+            <span class="work-card__live"><span class="dot"></span> No ar</span>
+          </a>
+          <div class="work-card__body">
+            <div class="work-card__top">
+              <h3>Paróquia Santo Afonso</h3>
+              <span class="work-card__year">2026</span>
+            </div>
+            <p class="work-card__desc">
+              Site institucional da paróquia: apresentação da comunidade, horários de
+              missas, avisos e contato. Layout responsivo, leve e acessível, com foco em
+              informação clara para os fiéis.
+            </p>
+            <div class="chips">
+              <span class="chip">HTML</span><span class="chip">CSS</span>
+              <span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+              <span class="chip">Responsivo</span><span class="chip">Vercel</span>
+            </div>
+            <div class="project__links">
+              <a href="https://site-paroquia-santo-afonso.vercel.app/"
+                 target="_blank" rel="noopener" class="btn btn--small">Ver site ao vivo →</a>
+            </div>
+          </div>
+        </article>
+        <!-- FIM DO TEMPLATE -->
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="section section--contact" id="contact">
       <div class="contact__card reveal">
-        <span class="section__index">05</span>
+        <span class="section__index">06</span>
         <h2 class="contact__title">Vamos construir algo juntos?</h2>
         <p class="contact__text">
           Estou aberto a projetos de consultoria backend, arquitetura e modernização
