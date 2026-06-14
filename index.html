@@ -145,6 +145,7 @@
           <li><span>🤖</span> IA aplicada à engenharia: LLMs, agentes &amp; automação</li>
           <li><span>⚙️</span> Arquitetura de microsserviços &amp; modernização de legados</li>
           <li><span>🔌</span> APIs RESTful e integrações financeiras/corporativas</li>
+          <li><span>🏢</span> SaaS multi-tenant fullstack: tenant context, RBAC &amp; design de API</li>
           <li><span>☁️</span> AWS, Docker e pipelines CI/CD</li>
           <li><span>🌐</span> Equipes distribuídas (Brasil, Espanha, projetos globais)</li>
           <li><span>🎓</span> Tecnólogo em ADS — conclusão 2026</li>
@@ -178,9 +179,17 @@
         <div class="stack__card reveal">
           <h3>Backend</h3>
           <div class="chips">
-            <span class="chip">Laravel</span><span class="chip">Node.js</span>
-            <span class="chip">APIs RESTful</span><span class="chip">Microsserviços</span>
+            <span class="chip">Laravel</span><span class="chip">Laravel Sanctum</span>
+            <span class="chip">Node.js</span><span class="chip">APIs RESTful</span>
+            <span class="chip">OpenAPI</span><span class="chip">Microsserviços</span>
             <span class="chip">Arquitetura Backend</span>
+          </div>
+        </div>
+        <div class="stack__card reveal">
+          <h3>Frontend</h3>
+          <div class="chips">
+            <span class="chip">Next.js</span><span class="chip">React</span>
+            <span class="chip">Tailwind CSS</span>
           </div>
         </div>
         <div class="stack__card reveal">
@@ -202,6 +211,8 @@
           <div class="chips">
             <span class="chip">SOLID</span><span class="chip">Clean Code</span>
             <span class="chip">Design Patterns</span><span class="chip">Cloud-Native</span>
+            <span class="chip">Multi-tenancy / SaaS</span><span class="chip">RBAC</span>
+            <span class="chip">Testes Automatizados</span><span class="chip">Spec-Driven Development</span>
           </div>
         </div>
         <div class="stack__card reveal">
@@ -296,6 +307,44 @@
         <span class="section__index">04</span>
         <h2 class="section__title">Projetos em destaque</h2>
       </div>
+
+      <article class="project project--featured reveal">
+        <div class="project__tag">🏢 SaaS · Flagship</div>
+        <h3>Imobflow SaaS</h3>
+        <p class="project__cat">SaaS · Real Estate · Plataforma Multi-tenant</p>
+        <p class="project__desc">
+          <strong>MVP SaaS fullstack multi-tenant</strong>, funcional e orientado a produção,
+          para gestão imobiliária, construído com
+          <strong>Laravel, PostgreSQL, Next.js, React e TypeScript</strong>.
+          Cobre todo o fluxo de negócio — cadastro de clientes e imóveis, captação de
+          leads, visitas, contratos de locação, cobranças de aluguel, pagamentos manuais,
+          despesas e site público de imóveis com captura pública de leads.
+          O projeto enfatiza <strong>arquitetura SaaS, tenant context, RBAC, design de API,
+          modelagem de domínio</strong>, testes automatizados, documentação OpenAPI e
+          <strong>Spec-Driven Development</strong>. Concluído com auditoria final de
+          prontidão de MVP, checklist de QA e pacote de publicação de portfólio.
+        </p>
+        <ul class="project__highlights">
+          <li>Arquitetura SaaS multi-tenant com tenant context e RBAC</li>
+          <li>API Laravel com autenticação Sanctum e validação OpenAPI</li>
+          <li>Fluxo de negócio sobre PostgreSQL + ledger financeiro (cobranças, pagamentos, despesas)</li>
+          <li>Painel administrativo Next.js + site público de imóveis e captura de leads</li>
+          <li>Testes automatizados backend/frontend e auditoria final de prontidão de MVP</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">PHP</span><span class="chip">Laravel</span>
+          <span class="chip">Laravel Sanctum</span><span class="chip">PostgreSQL</span>
+          <span class="chip">REST API</span><span class="chip">OpenAPI</span>
+          <span class="chip">Next.js</span><span class="chip">React</span>
+          <span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span>
+          <span class="chip">Docker</span><span class="chip">SaaS</span>
+          <span class="chip">Multi-tenancy</span><span class="chip">RBAC</span>
+          <span class="chip">Testes Automatizados</span><span class="chip">SDD</span>
+        </div>
+        <div class="project__links">
+          <a href="https://imobflow-six.vercel.app/" target="_blank" rel="noopener" class="btn btn--small">Ver demo ao vivo →</a>
+        </div>
+      </article>
 
       <article class="project project--featured reveal">
         <div class="project__tag">🤖 IA · Destaque</div>

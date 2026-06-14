@@ -478,7 +478,28 @@ body::before {
 }
 .project h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.01em; }
 .project__desc { color: var(--text-dim); margin-bottom: 18px; font-size: 0.96rem; }
-.project__links { margin-top: 20px; }
+.project__cat {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+.project__highlights { list-style: none; margin: 0 0 20px; display: grid; gap: 8px; }
+.project__highlights li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--text-dim);
+  font-size: 0.92rem;
+}
+.project__highlights li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+.project__links { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 12px; }
 .project__row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .projects__note { text-align: center; margin-top: 36px; color: var(--text-faint); }
 .projects__note a { color: var(--accent); }
